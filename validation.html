@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charest ="utf-8">
+<title>Validate</title>
+</head>
+<body>
+<h1>Reg Ex</h1>
+<h1>Login Page</h1>
+<form onsubmit="Validate()">
+<pre>
+<label>UserName</label>
+<input id=""username" type="text" name="name" required>
+<label>Password</label>
+<input id = "userPassword" type="password" name="password">
+<input type="Submit" name="Login">
+</pre>
+</form>
+<script type="text/javascript">
+var string="Regular expressions are patterns used to match character combinations in strings";
+functionValidate(){
+var username=document.getElementById("username");
+var userPassword=document.getElementById("userPassword").innerHTML;
+if(username==null || username.length < 2){
+alert("username is valid");
+}
+var passwordPattern=/[0-9]/g;
+else if(userPassword == || passwordPattern.test(userPassword) || userPassword.length < 8 || !passwordPattern.test(userPassword)){
+alert("password is invalid,should contain atleast 8 characters");
+
+}
+else{
+document.write("successfull");
+}
+}
+</script>
+</body>
+</html>
